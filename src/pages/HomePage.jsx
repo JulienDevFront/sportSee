@@ -15,6 +15,7 @@ import TextMain from "../components/TextMain.jsx";
 import SectionMainGraph from "../layouts/SectionMainGraph.jsx";
 import TitleGraph from "../components/TitleGraph.jsx";
 import GraphLegend from "../components/GraphLegend.jsx";
+import AsideNutritionLayout from "../layouts/AsideNutritionLayout.jsx";
 // ---
 import iconBodybuilding from "../assets/icons/iconBodybuilding.svg";
 import iconSwimming from "../assets/icons/iconSwimming.svg";
@@ -48,6 +49,7 @@ export default function HomePage() {
                     <GraphLegend legend="Poids" unit="Kg" color="#121415" />
                     <GraphLegend legend="Calories brûlées" unit="kCal" color="#E60000" />
                 </SectionMainGraph>
+                <AsideNutritionLayout></AsideNutritionLayout>
             </MainLayout>
         </div>
     );
