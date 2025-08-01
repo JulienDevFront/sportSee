@@ -1,5 +1,6 @@
 .headerWelcomeLayout {
-    width               : 2rem;
-    height              : 2rem;
-    background-color    : yellow;
+    display             : flex;
+    flex-direction      : column;
+    gap                 : 1rem;
+    width               : 100%;
 }
