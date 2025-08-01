@@ -1,0 +1,11 @@
+@use "../utils/utils_colors.scss" as colors;
+
+.buttonActivity {
+    display             : flex;
+    justify-content     : center;
+    align-items         : center;
+    width               : 4rem;
+    height              : 4rem;
+    border-radius       : 0.5rem;
+    background-color    : colors.$mono-50;
+}
