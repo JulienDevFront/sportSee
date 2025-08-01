@@ -1,10 +1,12 @@
 import styles from "../assets/styles/pages/homePage.module.scss";
+// header
 import NavHeaderLayout from "../layouts/NavHeaderLayout.jsx";
 import MainLayout from "../layouts/MainLayout.jsx";
 import AsideLayout from "../layouts/AsideLayout.jsx";
 import NavAsideLayout from "../layouts/NavAsideLayout.jsx";
 import FooterAsideLayout from "../layouts/FooterAsideLayout.jsx";
 import ButtonActivity from "../components/ButtonActivity.jsx";
+import HeaderWelcomeLayout from "../layouts/HeaderWelcomeLayout.jsx";
 // ---
 import iconBodybuilding from "../assets/icons/iconBodybuilding.svg";
 import iconSwimming from "../assets/icons/iconSwimming.svg";
@@ -29,6 +31,7 @@ export default function HomePage() {
                     </NavAsideLayout>
                     <FooterAsideLayout text="Copiryght, SportSee 2020" />
                 </AsideLayout>
+                <HeaderWelcomeLayout />
             </MainLayout>
         </div>
     );
