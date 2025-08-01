@@ -1,0 +1,13 @@
+@use "../utils/utils_colors.scss" as colors;
+@use "../fonts/fonts_weight.scss" as weights;
+@use "../fonts/fonts_size.scss" as sizes;
+
+.buttonLogo {
+    display         : flex;
+    align-items     : center;
+    gap             : 0.5rem;
+    height          : 58px;
+    font-size       : sizes.$font-lg;
+    font-weight     : weights.$weight-md;
+    color           : colors.$base-secondary;
+}
