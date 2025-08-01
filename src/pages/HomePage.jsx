@@ -14,6 +14,7 @@ import TitleMain from "../components/TitleMain.jsx";
 import TextMain from "../components/TextMain.jsx";
 import SectionMainGraph from "../layouts/SectionMainGraph.jsx";
 import TitleGraph from "../components/TitleGraph.jsx";
+import GraphLegend from "../components/GraphLegend.jsx";
 // ---
 import iconBodybuilding from "../assets/icons/iconBodybuilding.svg";
 import iconSwimming from "../assets/icons/iconSwimming.svg";
@@ -44,6 +45,8 @@ export default function HomePage() {
                 </HeaderWelcomeLayout>
                 <SectionMainGraph>
                     <TitleGraph title="Activité quotidienne" />
+                    <GraphLegend legend="Poids" unit="Kg" color="#121415" />
+                    <GraphLegend legend="Calories brûlées" unit="kCal" color="#E60000" />
                 </SectionMainGraph>
             </MainLayout>
         </div>

@@ -1,0 +1,21 @@
+@use "../utils/utils_colors.scss" as colors;
+@use "../fonts/fonts_weight.scss" as weights;
+@use "../fonts/fonts_size.scss" as sizes;
+
+.graphLegend {
+    display         : flex;
+    align-items     : center;
+    gap             : 10px;
+    
+    & > div {
+        width           : 0.5rem;
+        height          : 0.5rem;
+        border-radius   : 0.5rem;
+    }
+    
+    & > p {
+        font-size       : sizes.$font-sm;
+        font-weight     : weights.$weight-md;
+        color           : colors.$mono-300;
+    }
+}
