@@ -12,6 +12,7 @@ import ButtonActivity from "../components/ButtonActivity.jsx";
 import HeaderWelcomeLayout from "../layouts/HeaderWelcomeLayout.jsx";
 import TitleMain from "../components/TitleMain.jsx";
 import TextMain from "../components/TextMain.jsx";
+import SectionMainGraph from "../layouts/SectionMainGraph.jsx";
 // ---
 import iconBodybuilding from "../assets/icons/iconBodybuilding.svg";
 import iconSwimming from "../assets/icons/iconSwimming.svg";
@@ -40,6 +41,7 @@ export default function HomePage() {
                     <TitleMain text="Bonjour" name="Thomas"/>
                     <TextMain text="Félicitation ! Vous avez explosé vos objectifs hier 👏" />
                 </HeaderWelcomeLayout>
+                <SectionMainGraph></SectionMainGraph>
             </MainLayout>
         </div>
     );
