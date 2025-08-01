@@ -1,0 +1,26 @@
+// 👨‍🎨 Here master painter 👋 defines the core color palettes used throughout the application
+
+$monochrome: (
+  '50'      : #FFFFFF,  
+  '100'     : #FBFBFB,  
+  '200'     : #E6E7EA,   
+  '300'     : #74798C,   
+  '400'     : #5F6474,   
+  '500'     : #444953,   
+  '600'     : #282D30,   
+  '700'     : #1E2023,   
+  '800'     : #121415,   
+  '900'     : #020203,   
+  '950'     : #000000    
+);
+
+$base : (
+  'primary'         : #FF0000,
+  'secondary'       : #E60000,
+  'tertiary'        : #FF0101B2,
+);
+
+$backgroundApple        : #F9CE23;
+$backgroundBurger       : #FD51811A;
+$backgroundChicken      : #4AB8FF1A;
+$backgroundEnergy       : #FF0000;
