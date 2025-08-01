@@ -1,7 +1,9 @@
 {
   "name": "sportsee",
+  "description": "Hello 👋 sportSee is a minimalist tracking application. Explore a user's sports data in a dashboard full of all kinds of graphs. Built with React, this small project is a playground to practice API calls, Hooks, event handling, and integrating a user interface designed with Figma.",
+  "author": "JulienLOG on GitHub",
   "private": true,
-  "version": "0.0.0",
+  "version": "0.0.1",
   "type": "module",
   "scripts": {
     "dev": "vite",
