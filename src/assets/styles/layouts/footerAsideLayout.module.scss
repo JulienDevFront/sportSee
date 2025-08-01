@@ -3,6 +3,8 @@
 @use "../fonts/fonts_size.scss" as sizes;
 
 .footerAsideLayout {
+    position        : absolute;
+    bottom          : 60px;
 
     & > p {
         writing-mode    : sideways-lr;

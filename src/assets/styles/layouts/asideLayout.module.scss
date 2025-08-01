@@ -1,5 +1,12 @@
+@use "../utils/utils_colors.scss" as colors;
+
 .asideLayout {
+    position            : relative;
+    inset               : 0px;
     display             : flex;
-    flex                : 1;
-    background-color    : yellow;
+    flex-direction      : column;
+    justify-content     : center;
+    align-items         : center;
+    padding             : 60px 26px;
+    background-color    : colors.$mono-900;
 }
