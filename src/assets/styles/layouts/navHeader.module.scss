@@ -1,3 +1,9 @@
+@use "../utils/utils_colors.scss" as colors;
+
 .navHeader {
-    background-color    : blue;
+    display             : flex;
+    justify-content     : space-between;
+    align-items         : center;
+    padding             : 18px 92px 12px 28px;
+    background-color    : colors.$mono-900;
 }
