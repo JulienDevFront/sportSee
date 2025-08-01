@@ -11,6 +11,7 @@ import ButtonActivity from "../components/ButtonActivity.jsx";
     // header in main
 import HeaderWelcomeLayout from "../layouts/HeaderWelcomeLayout.jsx";
 import TitleMain from "../components/TitleMain.jsx";
+import TextMain from "../components/TextMain.jsx";
 // ---
 import iconBodybuilding from "../assets/icons/iconBodybuilding.svg";
 import iconSwimming from "../assets/icons/iconSwimming.svg";
@@ -37,6 +38,7 @@ export default function HomePage() {
                 </AsideLayout>
                 <HeaderWelcomeLayout>
                     <TitleMain text="Bonjour" name="Thomas"/>
+                    <TextMain text="Félicitation ! Vous avez explosé vos objectifs hier 👏" />
                 </HeaderWelcomeLayout>
             </MainLayout>
         </div>
