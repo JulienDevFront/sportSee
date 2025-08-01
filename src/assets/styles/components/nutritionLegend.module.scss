@@ -1,0 +1,37 @@
+@use "../utils/utils_colors.scss" as colors;
+@use "../fonts/fonts_weight.scss" as weights;
+@use "../fonts/fonts_size.scss" as sizes;
+
+.nutritionLegend {
+    display                 : flex;
+    gap                     : 24px;
+    align-items             : center;
+    min-width               : 258px;
+    padding                 : 2rem;
+    border-radius           : 5px;
+    background-color        : colors.$mono-100;
+    box-shadow              : 0 2px 4px 0 rgba(0, 0, 0, 0.02);
+
+    & > img {
+        width               : 60px;
+        height              : 60px;
+    }
+
+    & > div {
+        display             : flex;
+        flex-direction      : column;
+        gap                 : 0.5rem;
+
+        & h3 {
+            font-size           : sizes.$font-md;
+            font-weight         : weights.$weight-xl;
+            color               : colors.$mono-600;
+        }
+
+        & p {
+            font-size           : sizes.$font-sm;
+            font-weight         : weights.$weight-md;
+            color               : colors.$mono-300;
+        }
+    }
+}

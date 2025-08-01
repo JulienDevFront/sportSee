@@ -21,6 +21,11 @@ import iconBodybuilding from "../assets/icons/iconBodybuilding.svg";
 import iconSwimming from "../assets/icons/iconSwimming.svg";
 import iconYoga from "../assets/icons/iconYoga.svg";
 import iconBiking from "../assets/icons/iconBiking.svg";
+import iconCalories from "../assets/icons/iconCalories.svg";
+import iconProtein from "../assets/icons/iconProtein.svg";
+import iconCarbs from "../assets/icons/iconCarbs.svg";
+import iconFat from "../assets/icons/iconFat.svg";
+import NutritionLegend from "../components/NutritionLegend.jsx";
 
 
 
@@ -29,6 +34,7 @@ import iconBiking from "../assets/icons/iconBiking.svg";
 export default function HomePage() {
 
     const activityIcons = [iconBodybuilding, iconSwimming, iconYoga, iconBiking];
+
 
     return (
         <div className={ styles.homePage } >
@@ -49,7 +55,12 @@ export default function HomePage() {
                     <GraphLegend legend="Poids" unit="Kg" color="#121415" />
                     <GraphLegend legend="Calories brûlées" unit="kCal" color="#E60000" />
                 </SectionMainGraph>
-                <AsideNutritionLayout></AsideNutritionLayout>
+                <AsideNutritionLayout>
+                    <NutritionLegend img={iconCalories} alt="Icon calories" unit="1,930kCal" legend="Calories"/>
+                    <NutritionLegend img={iconProtein} alt="Icon proteins" unit="155g" legend="Proteines"/>
+                    <NutritionLegend img={iconCarbs} alt="Icon carbs" unit="290g" legend="Glucides"/>
+                    <NutritionLegend img={iconFat} alt="Icon fats" unit="50g" legend="Lipides"/>
+                </AsideNutritionLayout>
             </MainLayout>
         </div>
     );
