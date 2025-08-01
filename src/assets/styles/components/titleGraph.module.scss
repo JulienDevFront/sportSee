@@ -1,0 +1,9 @@
+@use "../utils/utils_colors.scss" as colors;
+@use "../fonts/fonts_weight.scss" as weights;
+@use "../fonts/fonts_size.scss" as sizes;
+
+.titleGraph {
+    font-size: sizes.$font-base;
+    font-weight: weights.$weight-md;
+    color: colors.$mono-800;
+}
