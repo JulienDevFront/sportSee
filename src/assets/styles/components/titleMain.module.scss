@@ -1,0 +1,15 @@
+@use "../utils/utils_colors.scss" as colors;
+@use "../fonts/fonts_weight.scss" as weights;
+@use "../fonts/fonts_size.scss" as sizes;
+
+.titleMain {
+    display         : flex;
+    gap             : 1rem;
+    font-size       : sizes.$font-2xl;
+    font-weight     : weights.$weight-md;
+    color           : colors.$mono-900;
+
+    & > span {
+        color       : colors.$base-tertiary;
+    }
+}
