@@ -3,6 +3,7 @@ import NavHeaderLayout from "../layouts/NavHeaderLayout.jsx";
 import MainLayout from "../layouts/MainLayout.jsx";
 import AsideLayout from "../layouts/AsideLayout.jsx";
 import NavAsideLayout from "../layouts/NavAsideLayout.jsx";
+import FooterAsideLayout from "../layouts/FooterAsideLayout.jsx";
 
 export default function HomePage() {
 
@@ -12,6 +13,7 @@ export default function HomePage() {
             <MainLayout>
                 <AsideLayout>
                     <NavAsideLayout />
+                    <FooterAsideLayout text="Copiryght, SportSee 2020" />
                 </AsideLayout>
             </MainLayout>
         </div>
