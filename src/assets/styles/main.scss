@@ -1,10 +1,1 @@
-@use "./fonts/fonts_family.scss" as families;
-@use "./fonts/fonts_size.scss" as sizes;
-@use "./fonts/fonts_weight.scss" as weights;
-
-
-body {
-    height              : 100vh;
-    background-color    : red;
-    @include families.font-primary(sizes.$font-base, weights.$weight-base, black)
-}
+@use "./base/normalize.scss";
