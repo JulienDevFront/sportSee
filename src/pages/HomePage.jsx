@@ -44,13 +44,13 @@ export default function HomePage() {
         <div className={ styles.homePage } >
             <NavHeaderLayout /> 
             <DashboardContainerLayout>
+                <AsideNavLayout>
+                    <NavAsideLayout>
+                        { activityIcons.map((item, index) => <ButtonActivity key={index} img={item} alt="Activity icon" /> )}
+                    </NavAsideLayout>
+                    <FooterAsideLayout text="Copiryght, SportSee 2020" />
+                </AsideNavLayout>
                 <MainLayout>
-                    <AsideNavLayout>
-                        <NavAsideLayout>
-                            { activityIcons.map((item, index) => <ButtonActivity key={index} img={item} alt="Activity icon" /> )}
-                        </NavAsideLayout>
-                        <FooterAsideLayout text="Copiryght, SportSee 2020" />
-                    </AsideNavLayout>
                     <HeaderWelcomeLayout>
                         <TitleMain text="Bonjour" name="Thomas"/>
                         <TextMain text="Félicitation ! Vous avez explosé vos objectifs hier 👏" />
