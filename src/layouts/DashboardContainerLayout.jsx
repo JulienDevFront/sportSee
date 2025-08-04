@@ -3,6 +3,6 @@ import styles from "../assets/styles/layouts/dashboardContainerLayout.module.scs
 export default function DashboardContainerLayout({ children }) {
 
     return (
-        <div className={ styles.dashboardContainerLayout }></div>
+        <div className={ styles.dashboardContainerLayout }>{ children }</div>
     );
 };
