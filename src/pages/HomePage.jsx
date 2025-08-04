@@ -29,6 +29,7 @@ import iconProtein from "../assets/icons/iconProtein.svg";
 import iconCarbs from "../assets/icons/iconCarbs.svg";
 import iconFat from "../assets/icons/iconFat.svg";
 import NutritionLegend from "../components/NutritionLegend.jsx";
+import SectionSecondaryGraph from "../layouts/SectionSecondaryGraph.jsx";
 
 
 
@@ -60,6 +61,9 @@ export default function HomePage() {
                         <GraphLegend legend="Poids" unit="Kg" color="#121415" />
                         <GraphLegend legend="Calories brûlées" unit="kCal" color="#E60000" />
                     </SectionMainGraph>
+                    <SectionSecondaryGraph />
+                    <SectionSecondaryGraph />
+                    <SectionSecondaryGraph />
                     <AsideNutritionLayout>
                         <NutritionLegend img={iconCalories} alt="Icon calories" unit="1,930kCal" legend="Calories"/>
                         <NutritionLegend img={iconProtein} alt="Icon proteins" unit="155g" legend="Proteines"/>
