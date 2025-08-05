@@ -30,7 +30,7 @@ import iconCarbs from "../assets/icons/iconCarbs.svg";
 import iconFat from "../assets/icons/iconFat.svg";
 import NutritionLegend from "../components/NutritionLegend.jsx";
 import SectionSecondaryGraph from "../layouts/SectionSecondaryGraph.jsx";
-import SectionGraphLayout from "../layouts/SectionGraphLayout.jsx";
+import MainContentView from "../layouts/MainContentView.jsx";
 
 
 
@@ -57,7 +57,7 @@ export default function HomePage() {
                         <TitleMain text="Bonjour" name="Thomas"/>
                         <TextMain text="Félicitation ! Vous avez explosé vos objectifs hier 👏" />
                     </HeaderWelcomeLayout>
-                    <SectionGraphLayout>
+                    <MainContentView>
                         <SectionMainGraph>
                             <TitleGraph title="Activité quotidienne" />
                             <GraphLegend legend="Poids" unit="Kg" color="#121415" />
@@ -72,7 +72,7 @@ export default function HomePage() {
                             <NutritionLegend img={iconCarbs} alt="Icon carbs" unit="290g" legend="Glucides"/>
                             <NutritionLegend img={iconFat} alt="Icon fats" unit="50g" legend="Lipides"/>
                         </AsideNutritionLayout>
-                    </SectionGraphLayout>
+                    </MainContentView>
                 </MainLayout>
             </DashboardContainerLayout>  
         </div>
