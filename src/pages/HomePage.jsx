@@ -2,7 +2,7 @@ import styles from "../assets/styles/pages/homePage.module.scss";
 import HeaderWelcomeLayout from "../layouts/HeaderWelcomeLayout.jsx";
 import TitleMain from "../components/TitleMain.jsx";
 import TextMain from "../components/TextMain.jsx";
-import SectionMainGraph from "../layouts/SectionMainGraph.jsx";
+import SectionGraphsView from "../layouts/SectionGraphsView.jsx";
 import TitleGraph from "../components/TitleGraph.jsx";
 import GraphLegend from "../components/GraphLegend.jsx";
 import AsideNutritionLayout from "../layouts/AsideNutritionLayout.jsx";
@@ -23,14 +23,14 @@ export default function HomePage() {
                 <TextMain text="Félicitation ! Vous avez explosé vos objectifs hier 👏" />
             </HeaderWelcomeLayout>
             <MainContentView>
-                <SectionMainGraph>
+                <SectionGraphsView>
                     <TitleGraph title="Activité quotidienne" />
                     <GraphLegend legend="Poids" unit="Kg" color="#121415" />
                     <GraphLegend legend="Calories brûlées" unit="kCal" color="#E60000" />
-                </SectionMainGraph>
-                <SectionSecondaryGraph />
-                <SectionSecondaryGraph />
-                <SectionSecondaryGraph />
+                    <SectionSecondaryGraph />
+                    <SectionSecondaryGraph />
+                    <SectionSecondaryGraph />
+                </SectionGraphsView>
                 <AsideNutritionLayout>
                     <NutritionLegend img={iconCalories} alt="Icon calories" unit="1,930kCal" legend="Calories"/>
                     <NutritionLegend img={iconProtein} alt="Icon proteins" unit="155g" legend="Proteines"/>
