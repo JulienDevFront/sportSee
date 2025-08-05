@@ -30,6 +30,7 @@ import iconCarbs from "../assets/icons/iconCarbs.svg";
 import iconFat from "../assets/icons/iconFat.svg";
 import NutritionLegend from "../components/NutritionLegend.jsx";
 import SectionSecondaryGraph from "../layouts/SectionSecondaryGraph.jsx";
+import SectionGraphLayout from "../layouts/SectionGraphLayout.jsx";
 
 
 
@@ -56,20 +57,22 @@ export default function HomePage() {
                         <TitleMain text="Bonjour" name="Thomas"/>
                         <TextMain text="Félicitation ! Vous avez explosé vos objectifs hier 👏" />
                     </HeaderWelcomeLayout>
-                    <SectionMainGraph>
-                        <TitleGraph title="Activité quotidienne" />
-                        <GraphLegend legend="Poids" unit="Kg" color="#121415" />
-                        <GraphLegend legend="Calories brûlées" unit="kCal" color="#E60000" />
-                    </SectionMainGraph>
-                    <SectionSecondaryGraph />
-                    <SectionSecondaryGraph />
-                    <SectionSecondaryGraph />
-                    <AsideNutritionLayout>
-                        <NutritionLegend img={iconCalories} alt="Icon calories" unit="1,930kCal" legend="Calories"/>
-                        <NutritionLegend img={iconProtein} alt="Icon proteins" unit="155g" legend="Proteines"/>
-                        <NutritionLegend img={iconCarbs} alt="Icon carbs" unit="290g" legend="Glucides"/>
-                        <NutritionLegend img={iconFat} alt="Icon fats" unit="50g" legend="Lipides"/>
-                    </AsideNutritionLayout>
+                    <SectionGraphLayout>
+                        <SectionMainGraph>
+                            <TitleGraph title="Activité quotidienne" />
+                            <GraphLegend legend="Poids" unit="Kg" color="#121415" />
+                            <GraphLegend legend="Calories brûlées" unit="kCal" color="#E60000" />
+                        </SectionMainGraph>
+                        <SectionSecondaryGraph />
+                        <SectionSecondaryGraph />
+                        <SectionSecondaryGraph />
+                        <AsideNutritionLayout>
+                            <NutritionLegend img={iconCalories} alt="Icon calories" unit="1,930kCal" legend="Calories"/>
+                            <NutritionLegend img={iconProtein} alt="Icon proteins" unit="155g" legend="Proteines"/>
+                            <NutritionLegend img={iconCarbs} alt="Icon carbs" unit="290g" legend="Glucides"/>
+                            <NutritionLegend img={iconFat} alt="Icon fats" unit="50g" legend="Lipides"/>
+                        </AsideNutritionLayout>
+                    </SectionGraphLayout>
                 </MainLayout>
             </DashboardContainerLayout>  
         </div>
