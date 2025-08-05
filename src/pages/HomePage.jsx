@@ -11,8 +11,8 @@ import iconProtein from "../assets/icons/iconProtein.svg";
 import iconCarbs from "../assets/icons/iconCarbs.svg";
 import iconFat from "../assets/icons/iconFat.svg";
 import NutritionLegend from "../components/NutritionLegend.jsx";
-import SectionSecondaryGraph from "../layouts/SectionSecondaryGraph.jsx";
 import MainContentView from "../layouts/MainContentView.jsx";
+import ArticleGraphView from "../layouts/ArticleGraphView.jsx";
 
 export default function HomePage() {
 
@@ -24,12 +24,13 @@ export default function HomePage() {
             </HeaderWelcomeLayout>
             <MainContentView>
                 <SectionGraphsView>
-                    <TitleGraph title="Activité quotidienne" />
+                    {/* <TitleGraph title="Activité quotidienne" />
                     <GraphLegend legend="Poids" unit="Kg" color="#121415" />
-                    <GraphLegend legend="Calories brûlées" unit="kCal" color="#E60000" />
-                    <SectionSecondaryGraph />
-                    <SectionSecondaryGraph />
-                    <SectionSecondaryGraph />
+                    <GraphLegend legend="Calories brûlées" unit="kCal" color="#E60000" /> */}
+                    <ArticleGraphView />
+                    <ArticleGraphView />
+                    <ArticleGraphView />
+                    <ArticleGraphView />
                 </SectionGraphsView>
                 <AsideNutritionLayout>
                     <NutritionLegend img={iconCalories} alt="Icon calories" unit="1,930kCal" legend="Calories"/>
