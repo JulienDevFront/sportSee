@@ -1,9 +1,9 @@
 import styles from "../assets/styles/pages/appContentPage.module.scss";
-import NavHeaderLayout from "../layouts/NavHeaderLayout.jsx";
-import AsideNavLayout from "../layouts/AsideNavLayout.jsx";
-import NavAsideLayout from "../layouts/NavAsideLayout.jsx";
+import NavHeaderView from "../views/NavHeaderView.jsx";
+import AsideNavView from "../views/AsideNavView.jsx";
+import NavAsideView from "../views/NavAsideView.jsx";
 import ButtonActivity from "../components/ButtonActivity.jsx";
-import FooterAsideLayout from "../layouts/FooterAsideLayout.jsx";
+import FooterAsideView from "../views/FooterAsideView.jsx";
 import iconBodybuilding from "../assets/icons/iconBodybuilding.svg";
 import iconSwimming from "../assets/icons/iconSwimming.svg";
 import iconYoga from "../assets/icons/iconYoga.svg";
@@ -15,14 +15,14 @@ export default function AppContentPage({ children }) {
     
     return (
         <div className={ styles.appContentPage } >
-            <NavHeaderLayout /> 
+            <NavHeaderView /> 
             <div className={ styles.appContentPage__content }>
-                <AsideNavLayout>
-                    <NavAsideLayout>
+                <AsideNavView>
+                    <NavAsideView>
                         { activityIcons.map((item, index) => <ButtonActivity key={index} img={item} alt="Activity icon" /> )}
-                    </NavAsideLayout>
-                    <FooterAsideLayout text="Copiryght, SportSee 2020" />
-                </AsideNavLayout>
+                    </NavAsideView>
+                    <FooterAsideView text="Copiryght, SportSee 2020" />
+                </AsideNavView>
                 { children }
             </div>  
         </div>

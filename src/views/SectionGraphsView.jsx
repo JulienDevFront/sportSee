@@ -1,4 +1,4 @@
-import styles from "../assets/styles/layouts/sectionGraphsView.module.scss";
+import styles from "../assets/styles/views/sectionGraphsView.module.scss";
 
 export default function SectionGraphsView({ children }) {
 

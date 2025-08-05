@@ -1,4 +1,4 @@
-import styles from "../assets/styles/layouts/articleGraphView.module.scss";
+import styles from "../assets/styles/views/articleGraphView.module.scss";
 
 export default function ArticleGraphView({ children }) {
 

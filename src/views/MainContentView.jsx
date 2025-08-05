@@ -1,4 +1,4 @@
-import styles from "../assets/styles/layouts/mainContentView.module.scss";
+import styles from "../assets/styles/views/mainContentView.module.scss";
 
 export default function MainContentView({ children }) {
 
