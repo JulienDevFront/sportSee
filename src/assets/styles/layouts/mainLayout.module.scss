@@ -1,5 +1,6 @@
 .mainLayout {
     display             : flex;
     flex                : 1;
-    background-color    : red;
+    flex-direction      : column;
+    padding             : 4rem 5.625rem 5.625rem 5.625rem;
 }
