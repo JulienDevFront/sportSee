@@ -2,11 +2,9 @@
     display             : flex;
     flex                : 1;
     flex-direction      : column;
-    background-color    : red;
 
     &__content {
         display             : flex;
         flex                : 1;
-        background-color    : pink;
     }
 }

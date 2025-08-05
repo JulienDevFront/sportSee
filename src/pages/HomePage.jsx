@@ -24,13 +24,16 @@ export default function HomePage() {
             </HeaderWelcomeLayout>
             <MainContentView>
                 <SectionGraphsView>
-                    {/* <TitleGraph title="Activité quotidienne" />
-                    <GraphLegend legend="Poids" unit="Kg" color="#121415" />
-                    <GraphLegend legend="Calories brûlées" unit="kCal" color="#E60000" /> */}
-                    <ArticleGraphView />
-                    <ArticleGraphView />
-                    <ArticleGraphView />
-                    <ArticleGraphView />
+                    <ArticleGraphView>
+                        {/* <TitleGraph title="Activité quotidienne" />
+                        <GraphLegend legend="Poids" unit="Kg" color="#121415" />
+                        <GraphLegend legend="Calories brûlées" unit="kCal" color="#E60000" /> */}
+                    </ArticleGraphView>
+                    <div className={ styles.homePage__secondaryGraphs }>
+                        <ArticleGraphView />
+                        <ArticleGraphView />
+                        <ArticleGraphView />
+                    </div>
                 </SectionGraphsView>
                 <AsideNutritionLayout>
                     <NutritionLegend img={iconCalories} alt="Icon calories" unit="1,930kCal" legend="Calories"/>

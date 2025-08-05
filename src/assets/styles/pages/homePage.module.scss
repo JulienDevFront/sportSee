@@ -2,6 +2,12 @@
     display             : flex;
     flex-direction      : column;
     flex                : 1;
+    gap                 : 4rem;
     padding             : 4rem 5.625rem 5.625rem 5.625rem;
-    background-color    : orange;
+
+    &__secondaryGraphs {
+        display         : flex;
+        gap             : 30px;
+        height          : 264px;
+    }
 }
