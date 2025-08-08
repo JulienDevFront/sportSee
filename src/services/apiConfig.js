@@ -4,7 +4,7 @@ export const DATA_SOURCE = {
 };
 
 export const getBaseURL = (SOURCE) => {
-    if(SOURCE === "MOCK") return "";
+    if(SOURCE === "MOCK") return "http://localhost:5173/";
     if(SOURCE === "HTTP") return "http://localhost:3000";
     console.error("the context is not valid, select HTTP or MOCK");
     return null;

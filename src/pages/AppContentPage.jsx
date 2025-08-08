@@ -1,3 +1,4 @@
+import { Outlet } from "react-router";
 import styles from "../assets/styles/pages/appContentPage.module.scss";
 import NavHeaderView from "../views/NavHeaderView.jsx";
 import AsideNavView from "../views/AsideNavView.jsx";
@@ -9,7 +10,7 @@ import iconSwimming from "../assets/icons/iconSwimming.svg";
 import iconYoga from "../assets/icons/iconYoga.svg";
 import iconBiking from "../assets/icons/iconBiking.svg";
 
-export default function AppContentPage({ children }) {
+export default function AppContentPage() {
 
     const activityIcons = [iconBodybuilding, iconSwimming, iconYoga, iconBiking];
     
@@ -23,7 +24,7 @@ export default function AppContentPage({ children }) {
                     </NavAsideView>
                     <FooterAsideView text="Copiryght, SportSee 2020" />
                 </AsideNavView>
-                { children }
+                <Outlet />
             </div>  
         </div>
     );
