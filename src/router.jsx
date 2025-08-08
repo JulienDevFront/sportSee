@@ -1,18 +1,17 @@
 import "./assets/styles/index.css";
-import { StrictMode, createContext } from 'react';
+import { StrictMode } from 'react';
 import ReactDOM from "react-dom/client";
 import { BrowserRouter, Routes, Route } from "react-router";
-import { DATA_SOURCE, getBaseURL } from "./services/apiConfig.js";
+import { ContextURL } from "./context/ContextURL.jsx";
 // - - -
 import AppContentPage from "./pages/AppContentPage.jsx";
 import HomePage from "./pages/HomePage.jsx";
 
 const root = document.getElementById("root");
-const ContextURL = createContext(getBaseURL(DATA_SOURCE.MOCK));
 
 ReactDOM.createRoot(root).render(
   <StrictMode>
-    <ContextURL value={ getBaseURL(DATA_SOURCE.MOCK) }>
+    <ContextURL value={ ContextURL }>
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<AppContentPage />}>
