@@ -10,3 +10,10 @@ export const getUserAverageSession = (userId, data) => {};
 export const getUserActivity = (userId, data) => {};
 
 export const getUserPerformance = (userId, data) => {};
+
+
+const callRouteService = async (route) => {
+    const res = await fetch(route);
+    if(res.ok !== true) return null;
+    return await res.json();
+}

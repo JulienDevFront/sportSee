@@ -2,7 +2,7 @@ import "./assets/styles/index.css";
 import { StrictMode } from 'react';
 import { createRoot } from 'react-dom/client';
 // - - -
-import { getMainData } from "./data/getRouteData.js";
+import { getMainData } from "./service/getRouteData.js";
 // import USER_MAIN_DATA from "./__mocks__/USER_MAIN_DATA.json";
 // - - -
 import AppContentPage from "./pages/AppContentPage.jsx";
