@@ -1,19 +1,21 @@
-export const getMainData = async (id, routes) => {
-    const res = await fetch(routes);
-    if(res.ok !== true) return null;
-    const data = await res.json();
+import { callRouteService } from "./callRouteService.js";
+
+export const getMainData = async (id, route) => {
+    const data = await callRouteService(route);
     return data.find((itt) => itt.id === id) || null
 };
 
-export const getUserAverageSession = (userId, data) => {};
+export const getUserAverageSession = async (userId, route) => {
+    const data = await callRouteService(route);
+    return data.find((itt) => itt.userId === userId) || null
+};
 
-export const getUserActivity = (userId, data) => {};
+export const getUserActivity = async (userId, route) => {
+    const data = await callRouteService(route);
+    return data.find((itt) => itt.userId === userId) || null
+};
 
-export const getUserPerformance = (userId, data) => {};
-
-
-const callRouteService = async (route) => {
-    const res = await fetch(route);
-    if(res.ok !== true) return null;
-    return await res.json();
-}
+export const getUserPerformance = async (userId, route) => {
+    const data = await callRouteService(route);
+    return data.find((itt) => itt.userId === userId) || null
+};
