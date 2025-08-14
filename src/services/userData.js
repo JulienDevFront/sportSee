@@ -1,21 +1,17 @@
-import { callRouteService } from "./callRouteService.js";
+import { fetchJson } from "./fetchJson.js";
 
-export const getMainData = async (id, route) => {
-    const data = await callRouteService(route);
-    return data.find((itt) => itt.id === id) || null
+export const getMainData = async (baseURL, userId) => {
+    return fetchJson(`${baseURL}/user/${userId}`)
 };
 
-export const getUserAverageSession = async (userId, route) => {
-    const data = await callRouteService(route);
-    return data.find((itt) => itt.userId === userId) || null
+export const getUserAverageSession = async (baseURL, userId) => {
+    return fetchJson(`${baseURL}/user/${userId}/average-sessions`)
 };
 
-export const getUserActivity = async (userId, route) => {
-    const data = await callRouteService(route);
-    return data.find((itt) => itt.userId === userId) || null
+export const getUserActivity = async (baseURL, userId) => {
+    return fetchJson(`${baseURL}/user/${userId}/activity`)
 };
 
-export const getUserPerformance = async (userId, route) => {
-    const data = await callRouteService(route);
-    return data.find((itt) => itt.userId === userId) || null
+export const getUserPerformance = async (baseURL, userId) => {
+    return fetchJson(`${baseURL}/user/${userId}/performance`)
 };
