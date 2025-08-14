@@ -14,8 +14,8 @@ ReactDOM.createRoot(root).render(
       <ApiProvider>
         <BrowserRouter>
           <Routes>
-            <Route path="/" element={ <AppContent /> }>
-              <Route path="user/:userId" element={ <DashboardPage /> }/>
+            <Route path="/user/" element={ <AppContent /> }>
+              <Route path=":userId" element={ <DashboardPage /> }/>
             </Route>
           </Routes>
         </BrowserRouter>
