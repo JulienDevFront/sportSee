@@ -12,10 +12,14 @@ import NutritionLegend from "../components/NutritionLegend.jsx";
 import MainContentView from "../views/MainContentView.jsx";
 import ArticleGraphView from "../views/ArticleGraphView.jsx";
 
+import ButtonToggleMode from "../components/ButtonToogleMode.jsx";
+
+
 export default function DashboardPage() {
 
     return (
         <div className={ styles.dashboardPage } >
+            <ButtonToggleMode />
             <HeaderWelcomeView>
                 <TitleMain text="Bonjour" name="Thomas"/>
                 <TextMain text="Félicitation ! Vous avez explosé vos objectifs hier 👏" />
