@@ -1,5 +1,5 @@
 import styles from "../assets/styles/views/navHeaderView.module.scss";
-import logo from "../assets/icons/iconSportSee.svg";
+import iconSportSee from "../assets/icons/iconSportSee.svg";
 import ButtonLogo from "../components/ButtonLogo.jsx";
 import ButtonLink from "../components/ButtonLink.jsx";
 
@@ -9,7 +9,7 @@ export default function NavHeaderView() {
 
     return (
         <nav className={ styles.navHeaderView}>
-            <ButtonLogo logo={ logo } alt="SportSee logo" text="SportSee"/>
+            <ButtonLogo path="#" img={ iconSportSee } alt="Back Home !" text="SportSee"/>
             { routes.map((item, index) => 
                 <ButtonLink key={ index } path="#" text={ item } />) 
             }
