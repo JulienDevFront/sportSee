@@ -4,7 +4,7 @@ import ReactDOM from "react-dom/client";
 import { BrowserRouter, Routes, Route } from "react-router";
 import { ContextURL } from "./context/ContextURL.jsx";
 // - - -
-import AppContentPage from "./pages/AppContentPage.jsx";
+import AppContent from "./app/AppContent.jsx";
 import HomePage from "./pages/HomePage.jsx";
 
 const root = document.getElementById("root");
@@ -14,7 +14,7 @@ ReactDOM.createRoot(root).render(
     <ContextURL value={ ContextURL }>
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<AppContentPage />}>
+          <Route path="/" element={<AppContent />}>
             <Route path="user/:userId" element={<HomePage />} />
             <Route path="user/:userId/activity" element={<HomePage />} />
             <Route path="user/:userId/average-sessions" element={<HomePage />} />

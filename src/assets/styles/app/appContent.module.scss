@@ -1,0 +1,10 @@
+.appContent {
+    display             : flex;
+    flex                : 1;
+    flex-direction      : column;
+
+    & > div {
+        display         : flex;
+        flex            : 1;
+    }
+}

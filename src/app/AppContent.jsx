@@ -1,5 +1,5 @@
 import { Outlet } from "react-router";
-import styles from "../assets/styles/pages/appContentPage.module.scss";
+import styles from "../assets/styles/app/appContent.module.scss";
 import NavHeaderView from "../views/NavHeaderView.jsx";
 import AsideNavView from "../views/AsideNavView.jsx";
 import NavAsideView from "../views/NavAsideView.jsx";
@@ -10,14 +10,14 @@ import iconSwimming from "../assets/icons/iconSwimming.svg";
 import iconYoga from "../assets/icons/iconYoga.svg";
 import iconBiking from "../assets/icons/iconBiking.svg";
 
-export default function AppContentPage() {
+export default function AppContent() {
 
     const activityIcons = [iconBodybuilding, iconSwimming, iconYoga, iconBiking];
     
     return (
-        <div className={ styles.appContentPage } >
+        <div className={ styles.appContent } >
             <NavHeaderView /> 
-            <div className={ styles.appContentPage__content }>
+            <div>
                 <AsideNavView>
                     <NavAsideView>
                         { activityIcons.map((item, index) => <ButtonActivity key={index} img={item} alt="Activity icon" /> )}
