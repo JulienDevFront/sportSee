@@ -1,8 +1,11 @@
+import { NavLink } from "react-router";
 import styles from "../assets/styles/components/buttonLink.module.scss";
 
-export default function buttonLink({ text }) {
+export default function buttonLink({ path, text }) {
 
     return (
-        <button className={ styles.buttonLink }>{ text }</button>
+        <NavLink to={ path } className={ styles.buttonLink }>
+            { text }
+        </NavLink>
     );
 };

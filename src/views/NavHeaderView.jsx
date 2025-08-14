@@ -10,7 +10,9 @@ export default function NavHeaderView() {
     return (
         <nav className={ styles.navHeaderView}>
             <ButtonLogo logo={ logo } alt="SportSee logo" text="SportSee"/>
-            { routes.map((item, index) => <ButtonLink key={ index } text={ item } />) }
+            { routes.map((item, index) => 
+                <ButtonLink key={ index } path="#" text={ item } />) 
+            }
         </nav>
     );
 };
