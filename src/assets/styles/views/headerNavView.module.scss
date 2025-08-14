@@ -1,9 +1,16 @@
 @use "../utils/utils_colors.scss" as colors;
 
-.navHeaderView {
+.headerNavView {
     display             : flex;
     justify-content     : space-between;
     align-items         : center;
     padding             : 18px 92px 12px 28px;
     background-color    : colors.$mono-900;
+
+    & > nav {
+        display             : flex;
+        flex                : 1;
+        justify-content     : space-between;
+        padding-left        : 150px;
+    }
 }

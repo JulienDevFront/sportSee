@@ -1,6 +1,6 @@
 import { Outlet } from "react-router";
 import styles from "../assets/styles/app/appContent.module.scss";
-import NavHeaderView from "../views/NavHeaderView.jsx";
+import HeaderNavView from "../views/HeaderNavView.jsx";
 import AsideNavView from "../views/AsideNavView.jsx";
 import NavAsideView from "../views/NavAsideView.jsx";
 import ButtonActivity from "../components/ButtonActivity.jsx";
@@ -16,7 +16,7 @@ export default function AppContent() {
     
     return (
         <div className={ styles.appContent } >
-            <NavHeaderView /> 
+            <HeaderNavView /> 
             <div>
                 <AsideNavView>
                     <NavAsideView>
