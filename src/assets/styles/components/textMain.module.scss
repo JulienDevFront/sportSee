@@ -1,9 +1,0 @@
-@use "../utils/utils_colors.scss" as colors;
-@use "../fonts/fonts_weight.scss" as weights;
-@use "../fonts/fonts_size.scss" as sizes;
-
-.textMain {
-    font-size: sizes.$font-md;
-    font-weight: weights.$weight-base;
-    color: colors.$mono-900;
-}
