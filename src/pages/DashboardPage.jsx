@@ -6,6 +6,7 @@ import { useParams } from "react-router";
 
 import ButtonToggleMode from "../components/ButtonToogleMode.jsx";
 import HeaderWelcomeView from "../views/HeaderWelcomeView.jsx";
+import AsideNutritionView from "../views/AsideNutritionView.jsx";
 
 export default function DashboardPage() {
     const { mode } = useContext(ApiContext);
@@ -20,7 +21,12 @@ export default function DashboardPage() {
     return (
         <div className={ styles.dashboardPage } >
             { mainData 
-                ? <HeaderWelcomeView name={ mainData.userInfos.firstName }/>
+                ? ( 
+                    <>
+                        <HeaderWelcomeView name={ mainData.userInfos.firstName }/>
+                        <AsideNutritionView unit={ mainData.keyData }/>
+                    </>
+                )
                 : <p>Chargement ...</p>
             }
             {/* <ButtonToggleMode /> */}
