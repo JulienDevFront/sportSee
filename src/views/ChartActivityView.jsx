@@ -1,5 +1,5 @@
 import styles from "../assets/styles/views/graphActivityView.module.scss";
-import TitleGraph from "../components/TitleGraph.jsx";
+import TitleChart from "../components/TitleChart.jsx";
 import ToolTipActivity from "../components/ToolTipActivity.jsx";
 import { ResponsiveContainer, BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip } from "recharts";
 
@@ -14,7 +14,7 @@ export default function ChartActivityView({ activityData }) {
 
     return data.length 
         ? ( <article className={styles.graphActivityView}>
-                <TitleGraph title="Activité quotidienne" />
+                <TitleChart title="Activité quotidienne" />
                 <div>
                     <ResponsiveContainer width="100%" height="100%" >
                         <BarChart data={data} barGap={16} barSize={8}>
