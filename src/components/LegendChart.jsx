@@ -1,9 +1,9 @@
-import styles from "../assets/styles/components/graphLegend.module.scss";
+import styles from "../assets/styles/components/legendChart.module.scss";
 
-export default function GraphLegend({ legend, unit, color }) {
+export default function LegendChart({ legend, unit, color }) {
 
     return (
-        <div className={ styles.graphLegend }>
+        <div className={ styles.legendChart }>
             <div style={{ backgroundColor:  color }} aria-label="Graphic legend color indicator"></div>
             <p>
                 <span>{ legend }</span>
