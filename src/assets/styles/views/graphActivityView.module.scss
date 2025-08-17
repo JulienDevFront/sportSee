@@ -11,6 +11,16 @@
     background-color    : utils_colors.$mono-100;
     box-shadow          : 0 2px 4px 0 rgba(0, 0, 0, 0.02);
 
+    & > header {
+        display             : flex;
+        justify-content     : space-between;
+
+        & > div {
+            display         : flex;
+            gap             : 2rem;
+        }
+    }
+
     & > div {
         display         : flex;
         flex            : 1;
