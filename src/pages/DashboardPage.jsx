@@ -8,6 +8,7 @@ import ButtonToggleMode from "../components/ButtonToogleMode.jsx";
 import HeaderWelcomeView from "../views/HeaderWelcomeView.jsx";
 import AsideNutritionView from "../views/AsideNutritionView.jsx";
 import ChartActivityView from "../views/ChartActivityView.jsx";
+import ChartAverageSessionsView from "../views/ChartAverageSessionsView.jsx";
 
 export default function DashboardPage() {
     const { mode } = useContext(ApiContext);
@@ -28,7 +29,14 @@ export default function DashboardPage() {
                     <>
                         <HeaderWelcomeView name={ mainData.userInfos.firstName }/>
                         <div>
-                            <ChartActivityView activityData={ activityData }/>
+                            <div>
+                                <ChartActivityView activityData={ activityData }/>
+                                <div>
+                                    <ChartAverageSessionsView />
+                                    <ChartAverageSessionsView />
+                                    <ChartAverageSessionsView />
+                                </div>
+                            </div>
                             <AsideNutritionView unit={ mainData.keyData }/>
                         </div>
                     </>
