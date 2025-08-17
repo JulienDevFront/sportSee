@@ -1,4 +1,5 @@
 import styles from "../assets/styles/views/graphActivityView.module.scss";
+import LegendChart from "../components/LegendChart.jsx";
 import TitleChart from "../components/TitleChart.jsx";
 import ToolTipActivity from "../components/ToolTipActivity.jsx";
 import { ResponsiveContainer, BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip } from "recharts";
@@ -15,6 +16,8 @@ export default function ChartActivityView({ activityData }) {
     return data.length 
         ? ( <article className={styles.graphActivityView}>
                 <TitleChart title="Activité quotidienne" />
+                <LegendChart legend="Poids (kg)" puceColor="#282D30"/>
+                <LegendChart legend="Calories brûlées (kCal)" puceColor="#E60000"/>
                 <div>
                     <ResponsiveContainer width="100%" height="100%" >
                         <BarChart data={data} barGap={16} barSize={8}>
