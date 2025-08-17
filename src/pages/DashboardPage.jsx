@@ -1,7 +1,7 @@
 import styles from "../assets/styles/pages/dashboardPage.module.scss";
 import { ApiContext } from "../context/ApiProvider.jsx";
 import { useContext, useState, useEffect } from "react";
-import { getMainData, getUserActivity } from "../services/userData.js";
+import { getMainData, getUserActivity, getUserAverageSession } from "../services/userData.js";
 import { useParams } from "react-router";
 
 import ButtonToggleMode from "../components/ButtonToogleMode.jsx";
@@ -15,11 +15,13 @@ export default function DashboardPage() {
     const { userId } = useParams();
     const [mainData, setMainData] = useState(null);
     const [activityData, setActivityData] = useState(null);
+    const [sessionsData, setSessionsData] = useState(null);
 
     useEffect(() => {
         if (!mode?.baseURL || !userId) return;
         getMainData(mode, userId).then(setMainData);
         getUserActivity(mode, userId).then(setActivityData);
+        getUserAverageSession(mode, userId).then(setSessionsData);
     }, [mode, userId]);
 
     return (
@@ -32,7 +34,7 @@ export default function DashboardPage() {
                             <div>
                                 <ChartActivityView activityData={ activityData }/>
                                 <div>
-                                    <ChartAverageSessionsView />
+                                    <ChartAverageSessionsView sessionsData={ sessionsData }/>
                                     <ChartAverageSessionsView />
                                     <ChartAverageSessionsView />
                                 </div>
