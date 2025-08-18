@@ -10,6 +10,7 @@ import AsideNutritionView from "../views/AsideNutritionView.jsx";
 import ChartActivityView from "../views/ChartActivityView.jsx";
 import ChartAverageSessionsView from "../views/ChartAverageSessionsView.jsx";
 import ChartPerformanceView from "../views/ChatPerformanceView.jsx";
+import ChartScoreView from "../views/ChartScoreView.jsx";
 
 export default function DashboardPage() {
     const { mode } = useContext(ApiContext);
@@ -39,6 +40,7 @@ export default function DashboardPage() {
                                 <div>
                                     <ChartAverageSessionsView sessionsData={ sessionsData }/>
                                     <ChartPerformanceView performanceData={ performanceData }/>
+                                    <ChartScoreView mainData={ mainData } />
                                 </div>
                             </div>
                             <AsideNutritionView unit={ mainData.keyData }/>
