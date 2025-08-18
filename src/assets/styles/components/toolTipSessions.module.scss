@@ -1,0 +1,15 @@
+@use "../utils/utils_colors.scss" as utils_colors;
+@use "../fonts/fonts_weight.scss" as fonts_weight;
+@use "../fonts/fonts_size.scss" as fonts_size;
+
+.toolTipSessions {
+    padding             : 0px 8px;
+    background-color    : white;
+    
+    & > div {
+        line-height     : fonts_size.$font-lg;
+        font-size       : fonts_size.$font-2xs;
+        font-weight     : fonts_weight.$weight-md;
+        color           : utils_colors.$mono-950;
+    }
+}

@@ -35,8 +35,6 @@ export default function DashboardPage() {
                                 <ChartActivityView activityData={ activityData }/>
                                 <div>
                                     <ChartAverageSessionsView sessionsData={ sessionsData }/>
-                                    <ChartAverageSessionsView />
-                                    <ChartAverageSessionsView />
                                 </div>
                             </div>
                             <AsideNutritionView unit={ mainData.keyData }/>
