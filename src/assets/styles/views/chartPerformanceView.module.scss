@@ -1,0 +1,9 @@
+@use "../utils/utils_colors.scss" as utils_colors;
+
+.chartPerformanceView {
+    display                 : flex;
+    flex                    : 1;
+    border-radius           : 5px;
+    background-color        : utils_colors.$mono-600;
+    box-shadow              : 0 2px 4px 0 rgba(0, 0, 0, 0.02);
+}
