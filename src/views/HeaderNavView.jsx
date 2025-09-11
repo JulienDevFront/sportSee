@@ -5,7 +5,8 @@ import ButtonLink from "../components/ButtonLink.jsx";
 
 export default function HeaderNavView() {
 	const routes = ["Accueil", "Profil", "Réglage", "Communauté"];
-	return (
+	
+    return (
 		<header className={styles.headerNavView}>
 			<ButtonLogo
 				path="#"

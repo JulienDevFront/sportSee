@@ -14,14 +14,11 @@ import {
 
 export default function ChartActivityView({ activityData }) {
 	const data = activityData?.sessions || [];
-
 	const min = Math.min(...data.map((item) => item.kilogram)) - 3;
 	const max = Math.max(...data.map((item) => item.kilogram)) + 3;
 	const mid = Math.round((min + max) / 2);
-
-	console.log("Activity data :", activityData);
-
-	return data.length ? (
+	
+    return data.length ? (
 		<article className={styles.graphActivityView}>
 			<header>
 				<TitleChart title="Activité quotidienne" />
