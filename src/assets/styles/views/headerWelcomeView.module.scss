@@ -3,14 +3,20 @@
 @use "../fonts/fonts_size.scss" as sizes;
 
 .headerWelcomeView {
-    display             : flex;
-    flex-direction      : column;
-    gap                 : 1rem;
-    width               : 100%;
-
-    & > p {
-        font-size       : sizes.$font-md;
-        font-weight     : weights.$weight-base;
-        color           : colors.$mono-900;
+    display                 : flex;
+    justify-content         : space-between;
+    align-items             : flex-end;
+    
+    & > div {
+        display             : flex;
+        flex-direction      : column;
+        gap                 : 1rem;
+        width               : 100%;
+    
+        & > p {
+            font-size       : sizes.$font-md;
+            font-weight     : weights.$weight-base;
+            color           : colors.$mono-900;
+        }
     }
 }

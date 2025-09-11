@@ -24,7 +24,7 @@
 
         & > p {
             writing-mode    : sideways-lr;
-            font-size       : sizes.$font-xs;
+            font-size       : clamp(0.5rem, 1vh, 0.75rem);
             font-weight     : weights.$weight-md;
             color           : colors.$mono-50;
         }

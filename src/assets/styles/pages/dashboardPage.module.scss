@@ -3,26 +3,24 @@
     flex-direction      : column;
     flex                : 1;
     gap                 : 4rem;
-    padding             : 4rem 5.625rem 5.625rem 5.625rem;
+    padding             : 4rem 1.875rem 1.875rem 1.875rem;
 
     & > div { 
         display             : flex;
         flex                : 1;
-        gap                 : 30px;
+        gap                 : 1.875rem;
         justify-content     : space-between;
-        // background-color    : pink;
 
         & > div { 
             display                 : flex;
             flex                    : 1;
-            gap                     : 30px;
+            gap                     : 1.875rem;
             flex-direction          : column;
-            // background-color        : blue;
 
             & > div {
                 display             : flex;
                 flex                : 1;
-                gap                 : 30px;
+                gap                 : 1.875rem;
                 justify-content     : space-between;
             }
         }

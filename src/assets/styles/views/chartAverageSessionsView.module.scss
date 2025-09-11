@@ -1,4 +1,6 @@
 @use "../utils/utils_colors.scss" as utils_colors;
+@use "../fonts/fonts_size.scss" as fonts_size;
+@use "../fonts/fonts_weight" as fonts_weight;
 
 .chartAverageSessionsView {
     display                 : flex;
@@ -7,6 +9,13 @@
     border-radius           : 5px;
     background-color        : utils_colors.$base-secondary;
     box-shadow              : 0 2px 4px 0 rgba(0, 0, 0, 0.02);
+
+    & > header > h3 {
+        padding             : 1.5rem;
+        font-size           : fonts_size.$font-sm ;
+        font-weight         : fonts_weight.$weight-md;
+        color               : white;
+    }
 
     & > div { 
         display         : flex;

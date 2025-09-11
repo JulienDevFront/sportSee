@@ -4,10 +4,10 @@
 
 .nutritionLegend {
     display                 : flex;
-    gap                     : 24px;
+    flex                    : 1;
+    gap                     : clamp(0.75rem, 1vw, 1.5rem);
     align-items             : center;
-    min-width               : 258px;
-    padding                 : 2rem;
+    padding                 : clamp(1rem, 1vw, 2rem);
     border-radius           : 5px;
     background-color        : colors.$mono-100;
     box-shadow              : 0 2px 4px 0 rgba(0, 0, 0, 0.02);
@@ -23,13 +23,13 @@
         gap                 : 0.5rem;
 
         & h3 {
-            font-size           : sizes.$font-md;
+            font-size           : clamp(0.875rem, 1vw, 1.125rem);
             font-weight         : weights.$weight-xl;
             color               : colors.$mono-600;
         }
 
         & p {
-            font-size           : sizes.$font-sm;
+            font-size           : clamp(0.625rem, 1vw, 0.875rem);
             font-weight         : weights.$weight-md;
             color               : colors.$mono-300;
         }

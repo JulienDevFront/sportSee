@@ -21,8 +21,9 @@ html {
 body, #root {
     display             : flex;
     flex-direction      : column;
+    align-items         : center;
     width               : 100%;
     min-height          : 100dvh;
     background-color    : colors.$mono-50;
-    @include families.font-primary(sizes.$font-base, weights.$weight-base, colors.$mono-950);
+    @include            families.font-primary(sizes.$font-base, weights.$weight-base, colors.$mono-950);
 };
