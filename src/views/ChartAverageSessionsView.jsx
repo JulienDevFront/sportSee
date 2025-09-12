@@ -63,7 +63,7 @@ export default function ChartAverageSessionsView({ sessionsData }) {
 							fontSize={14}
 							fill="rgba(255,255,255,0.8)"
 						>
-							Durée moyenne
+							Durée moyenne des 
 						</Text>
 						<Text
 							x={20}
@@ -73,7 +73,7 @@ export default function ChartAverageSessionsView({ sessionsData }) {
 							fontSize={14}
 							fill="rgba(255,255,255,0.8)"
 						>
-							des sessions
+							sessions
 						</Text>
 						<XAxis
 							dataKey="day"
