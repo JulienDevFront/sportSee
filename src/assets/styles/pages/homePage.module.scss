@@ -1,0 +1,27 @@
+@use "../utils/utils_colors.scss" as utils_colors;
+@use "../fonts/fonts_weight.scss" as fonts_weigth;
+@use "../fonts/fonts_size.scss" as fonts_size;
+
+.homePage {
+	display				: flex;
+	flex				: 1;
+	flex-direction		: column;
+	justify-content		: center;
+	align-items			: center;
+	gap					: 1rem;
+
+	& a {
+		width				: 200px;
+		padding				: 1.5rem;
+		color				: utils_colors.$mono-800;
+		font-size			: fonts_size.$font-base;
+		font-weight			: fonts_weigth.$weight-lg;
+		border-radius		: 4px;
+		background-color	: utils_colors.$mono-200;
+		border				: 2px solid utils_colors.$mono-200;
+	}
+}
+
+.homePage a:hover {
+	border					: 2px solid utils_colors.$mono-800;
+}

@@ -1,0 +1,28 @@
+@use "../utils/utils_colors.scss" as utils_colors;
+@use "../fonts/fonts_weight.scss" as fonts_weigth;
+@use "../fonts/fonts_size.scss" as fonts_size;
+
+.errorBoundaryPage {
+	display                 : flex;
+    flex-direction          : column;
+    gap                     : 2rem;
+	flex                    : 1;
+	justify-content         : center;
+	align-items             : center;
+
+	& a {
+		padding             : 1.5rem;
+		color               : utils_colors.$mono-800;
+		font-size           : fonts_size.$font-base;
+		font-weight         : fonts_weigth.$weight-lg;
+		border-radius       : 4px;
+    	border              : 2px solid utils_colors.$mono-200;
+		background-color    : utils_colors.$mono-200;
+	}
+}
+
+.errorBoundaryPage a:hover {
+    border                  : 2px solid utils_colors.$mono-800;
+}
+
+

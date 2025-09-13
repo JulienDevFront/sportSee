@@ -2,7 +2,7 @@ import styles from "../assets/styles/pages/dashboardPage.module.scss";
 import { ApiContext } from "../context/ApiProvider.jsx";
 import { useContext, useState, useEffect } from "react";
 import UserAPI from "../services/UserAPI.js";
-import { useParams } from "react-router";
+import { useParams, useNavigate } from "react-router";
 import HeaderWelcomeView from "../views/HeaderWelcomeView.jsx";
 import AsideNutritionView from "../views/AsideNutritionView.jsx";
 import ChartActivityView from "../views/ChartActivityView.jsx";
@@ -17,22 +17,23 @@ export default function DashboardPage() {
 	const [activityData, setActivityData] = useState(null);
 	const [sessionsData, setSessionsData] = useState(null);
 	const [performanceData, setPerformanceData] = useState(null);
+	const navigate = useNavigate();
 
 	useEffect(() => {
 		if (!mode?.baseURL || !userId) return;
-        const USER_API = new UserAPI(mode);
+		const USER_API = new UserAPI(mode);
 		USER_API.getMainData(userId)
-			.then(setMainData)
-			.catch((e) => console.log(e));
+			.then((resolve) => setMainData(resolve))
+			.catch((e) => navigate("/error/500"));
 		USER_API.getUserActivity(userId)
-			.then(setActivityData)
-			.catch((e) => console.log(e));
+			.then((resolve) => setActivityData(resolve))
+			.catch((e) => navigate("/error/500"));
 		USER_API.getUserAverageSession(userId)
-			.then(setSessionsData)
-			.catch((e) => console.log(e));
+			.then((resolve) => setSessionsData(resolve))
+			.catch((e) => navigate("/error/500"));
 		USER_API.getUserPerformance(userId)
-			.then(setPerformanceData)
-			.catch((e) => console.log(e));
+			.then((resolve) => setPerformanceData(resolve))
+			.catch((e) => navigate("/error/500"));
 	}, [mode, userId]);
 
 	return (
